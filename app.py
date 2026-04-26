@@ -476,18 +476,19 @@ with st.sidebar:
     import streamlit.components.v1 as components
     
     # 1. PayPal Option (International)
-    paypal_html = """
-    <div style="text-align: center; margin-bottom: 15px;">
-        <p style="font-size: 13px; margin-bottom: 8px;"><b>International Support (USD)</b></p>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick" />
-            <input type="hidden" name="hosted_button_id" value="DJXQVFP3FHQDN" />
-            <input type="hidden" name="currency_code" value="USD" />
-            <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png" 
-                   border="0" name="submit" alt="Donate with PayPal" style="width: 140px;">
-        </form>
-    </div>
-    """
+   # 1. PayPal Option (International Support)
+# This uses a direct URL link to ensure it works in all browsers
+paypal_url = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DJXQVFP3FHQDN"
+
+st.sidebar.markdown(f"""
+<div style="text-align: center; margin-bottom: 15px;">
+    <p style="font-size: 13px; margin-bottom: 8px;"><b>International Support (USD)</b></p>
+    <a href="{paypal_url}" target="_blank" style="text-decoration: none;">
+        <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png" 
+             alt="Donate with PayPal" style="width: 140px; border: 0;">
+    </a>
+</div>
+""", unsafe_allow_html=True)
     components.html(paypal_html, height=80)
 
     # 2. KPay Option (Local/Myanmar)
