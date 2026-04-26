@@ -464,7 +464,40 @@ with st.sidebar:
         I_val = st.number_input("I (mm⁴)", value=float(I_auto), step=1000.0, min_value=1.0)
         W_val = st.number_input("W (mm³)", value=float(W_auto), step=100.0,  min_value=1.0)
 
+# Sidebar Support Section
+st.sidebar.markdown("---")
+st.sidebar.subheader("Support the Virtual Lab")
 
+st.sidebar.write("""
+If these simulations assist in your teaching or learning, your support helps maintain the server and develop new educational modules.
+""")
+
+with st.sidebar:
+    import streamlit.components.v1 as components
+    
+    # 1. PayPal Option (International)
+    paypal_html = """
+    <div style="text-align: center; margin-bottom: 15px;">
+        <p style="font-size: 13px; margin-bottom: 8px;"><b>International Support (USD)</b></p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="DJXQVFP3FHQDN" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-medium.png" 
+                   border="0" name="submit" alt="Donate with PayPal" style="width: 140px;">
+        </form>
+    </div>
+    """
+    components.html(paypal_html, height=80)
+
+    # 2. KPay Option (Local/Myanmar)
+    st.markdown("""
+    <div style="background-color: #f0f2f6; padding: 10px; border-radius: 5px; text-align: center; border: 1px solid #d1d5db;">
+        <p style="font-size: 13px; margin-bottom: 2px;"><b>Local Support (KPay)</b></p>
+        <p style="font-size: 14px; font-weight: bold; color: #1e3a8a; margin: 0;">09793490979</p>
+        <p style="font-size: 11px; color: #6b7280; margin: 0;">Dr. Theingi Nwe</p>
+    </div>
+    """, unsafe_allow_html=True)
 
 # Sidebar Section
 st.sidebar.markdown("---")
