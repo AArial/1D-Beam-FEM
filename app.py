@@ -2,7 +2,6 @@
 1D Beam FEM Simulator — TgN Virtual Lab
 Streamlit app implementing Euler-Bernoulli beam FEM with Hermitian cubic shape functions.
 Author: TgN (finiteelementsimulationsbytgn.blogspot.com)
-Reference: https://fembeam1d-vlueddemann.streamlit.app/
 """
 
 import streamlit as st
@@ -466,9 +465,10 @@ with st.sidebar:
         W_val = st.number_input("W (mm³)", value=float(W_auto), step=100.0,  min_value=1.0)
 
     st.markdown("---")
-    st.markdown("**TgN Virtual Lab**")
+    st.markdown("**Developed by: Dr. Theingi Nwe**")
+    st.caption("Associate Professor(NSPU) | Postdoctoral Researcher(KMUTT)")
     st.markdown("[finiteelementsimulationsbytgn.blogspot.com](https://finiteelementsimulationsbytgn.blogspot.com)")
-    st.markdown("[Reference: fembeam1d](https://fembeam1d-vlueddemann.streamlit.app/)")
+    
 
 # ─────────────────────────────────────────
 # MAIN TABS
