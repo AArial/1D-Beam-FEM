@@ -471,8 +471,15 @@ st.sidebar.subheader("Develop by:")
 st.sidebar.markdown("""
 **Dr. Theingi Nwe** *Associate Professor & Postdoctoral Researcher* **Dept. of Mechanical Engineering** Naypyitaw State Polytechnic University (NSPU)  
 """)
+# Sidebar Section
+st.sidebar.markdown("---")
+st.sidebar.subheader("Developed by:")
+st.sidebar.markdown("**Dr. Theingi Nwe**")
+st.sidebar.markdown(" *Associate Professor & Postdoctoral Researcher* ")
+st.sidebar.markdown("Naypyitaw State Polytechnic University (NSPU)")
 # Highlighting the link with an icon and a border for a "button" feel
-st.sidebar.info("🌐 [TgN Virtual Lab (Official Blog)](https://finiteelementsimulationsbytgn.blogspot.com)")
+st.sidebar.info("🌐 [Finite Element Institute (Official Blog)](https://fesimulationsbytgn.blogspot.com)")
+
         
 # ─────────────────────────────────────────
 # MAIN TABS
