@@ -465,18 +465,11 @@ with st.sidebar:
         W_val = st.number_input("W (mm³)", value=float(W_auto), step=100.0,  min_value=1.0)
 
 
+
 # Sidebar Section
 st.sidebar.markdown("---")
-st.sidebar.subheader("Develop by:")
-st.sidebar.markdown("""
-**Dr. Theingi Nwe** *Associate Professor & Postdoctoral Researcher* **Dept. of Mechanical Engineering** Naypyitaw State Polytechnic University (NSPU)  
-""")
-# Sidebar Section
-st.sidebar.markdown("---")
-st.sidebar.subheader("Developed by:")
-st.sidebar.markdown("**Dr. Theingi Nwe**")
-st.sidebar.markdown(" *Associate Professor & Postdoctoral Researcher* ")
-st.sidebar.markdown("Naypyitaw State Polytechnic University (NSPU)")
+st.sidebar.subheader("Developed by: Theingi Nwe")
+
 # Highlighting the link with an icon and a border for a "button" feel
 st.sidebar.info("🌐 [Finite Element Institute (Official Blog)](https://fesimulationsbytgn.blogspot.com)")
 
