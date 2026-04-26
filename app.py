@@ -18,7 +18,7 @@ import io
 # PAGE CONFIG
 # ─────────────────────────────────────────
 st.set_page_config(
-    page_title="1D Beam FEM Simulator — TgN Virtual Lab",
+    page_title="1D Beam FEM Simulator",
     page_icon="🏗️",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -465,13 +465,14 @@ with st.sidebar:
         W_val = st.number_input("W (mm³)", value=float(W_auto), step=100.0,  min_value=1.0)
 
 
+# Sidebar Section
+st.sidebar.markdown("---")
+st.sidebar.subheader("Develop by:")
 st.sidebar.markdown("""
-### **About the Developer**
-**Dr. Theingi Nwe** 
-Associate Professor | Postdoctoral Researcher
-Dept. of Mechanical Engineering, NSPU  
+**Dr. Theingi Nwe** *Associate Professor & Postdoctoral Researcher* **Dept. of Mechanical Engineering** Naypyitaw State Polytechnic University (NSPU)  
 """)
-st.markdown("🌐 [TgN Virtual Lab (Official Blog)](https://finiteelementsimulationsbytgn.blogspot.com)")
+# Highlighting the link with an icon and a border for a "button" feel
+st.sidebar.info("🌐 [TgN Virtual Lab (Official Blog)](https://finiteelementsimulationsbytgn.blogspot.com)")
         
 # ─────────────────────────────────────────
 # MAIN TABS
