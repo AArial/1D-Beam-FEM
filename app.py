@@ -467,10 +467,11 @@ with st.sidebar:
 
 st.sidebar.markdown("""
 ### **About the Developer**
-**Dr. Theingi Nwe** Associate Professor  
+**Dr. Theingi Nwe** 
+Associate Professor | Postdoctoral Researcher
 Dept. of Mechanical Engineering, NSPU  
-[TgN Virtual Lab](https://finiteelementsimulationsbytgn.blogspot.com)
 """)
+st.markdown("🌐 [TgN Virtual Lab (Official Blog)](https://finiteelementsimulationsbytgn.blogspot.com)")
         
 # ─────────────────────────────────────────
 # MAIN TABS
