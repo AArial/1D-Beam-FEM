@@ -36,4 +36,4 @@ streamlit run app.py
 ## Author
 TgN — Naypyitaw State Polytechnic University, Myanmar  
 Blog: https://finiteelementsimulationsbytgn.blogspot.com  
-Reference: https://fembeam1d-vlueddemann.streamlit.app/
+
