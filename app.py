@@ -466,7 +466,7 @@ with st.sidebar:
 
 # Sidebar Support Section
 st.sidebar.markdown("---")
-st.sidebar.subheader("Support the Virtual Lab")
+st.sidebar.subheader("Support TgN Virtual Lab")
 
 st.sidebar.write("""
 "If these simulations assist in your teaching or learning, your support helps maintain the server and develop new educational modules."
