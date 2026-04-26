@@ -469,7 +469,7 @@ st.sidebar.markdown("---")
 st.sidebar.subheader("Support the Virtual Lab")
 
 st.sidebar.write("""
-If these simulations assist in your teaching or learning, your support helps maintain the server and develop new educational modules.
+"If these simulations assist in your teaching or learning, your support helps maintain the server and develop new educational modules."
 """)
 
 with st.sidebar:
