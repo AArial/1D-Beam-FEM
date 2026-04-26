@@ -466,7 +466,7 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown("**Developed by: Dr. Theingi Nwe**")
-    st.caption("Associate Professor(NSPU) | Postdoctoral Researcher(KMUTT)")
+    st.markdown("*Associate Professor, Dept. of Mechanical Engineering, NSPU*")
     st.markdown("[finiteelementsimulationsbytgn.blogspot.com](https://finiteelementsimulationsbytgn.blogspot.com)")
     
 
