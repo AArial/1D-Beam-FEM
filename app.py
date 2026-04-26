@@ -475,9 +475,8 @@ If these simulations assist in your teaching or learning, your support helps mai
 with st.sidebar:
     import streamlit.components.v1 as components
     
-    # 1. PayPal Option (International)
-   # 1. PayPal Option (International Support)
-# This uses a direct URL link to ensure it works in all browsers
+# 1. PayPal Option (International Support)
+# Using a direct URL link ensures compatibility across all browsers and devices
 paypal_url = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DJXQVFP3FHQDN"
 
 st.sidebar.markdown(f"""
@@ -489,16 +488,15 @@ st.sidebar.markdown(f"""
     </a>
 </div>
 """, unsafe_allow_html=True)
-    components.html(paypal_html, height=80)
 
-    # 2. KPay Option (Local/Myanmar)
-    st.markdown("""
-    <div style="background-color: #f0f2f6; padding: 10px; border-radius: 5px; text-align: center; border: 1px solid #d1d5db;">
-        <p style="font-size: 13px; margin-bottom: 2px;"><b>Local Support (KPay)</b></p>
-        <p style="font-size: 14px; font-weight: bold; color: #1e3a8a; margin: 0;">09793490979</p>
-        <p style="font-size: 11px; color: #6b7280; margin: 0;">Dr. Theingi Nwe</p>
-    </div>
-    """, unsafe_allow_html=True)
+# 2. Local Support (Myanmar KPay)
+st.sidebar.markdown("""
+<div style="background-color: #f0f2f6; padding: 10px; border-radius: 5px; text-align: center; border: 1px solid #d1d5db;">
+    <p style="font-size: 13px; margin-bottom: 2px;"><b>Local Support (KPay)</b></p>
+    <p style="font-size: 14px; font-weight: bold; color: #1e3a8a; margin: 0;">09793490979</p>
+    <p style="font-size: 11px; color: #6b7280; margin: 0;">Theingi Nwe</p>
+</div>
+""", unsafe_allow_html=True)
 
 # Sidebar Section
 st.sidebar.markdown("---")
