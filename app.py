@@ -464,12 +464,14 @@ with st.sidebar:
         I_val = st.number_input("I (mm⁴)", value=float(I_auto), step=1000.0, min_value=1.0)
         W_val = st.number_input("W (mm³)", value=float(W_auto), step=100.0,  min_value=1.0)
 
-    st.markdown("---")
-    st.markdown("**Developed by: Dr. Theingi Nwe**")
-    st.markdown("*Associate Professor, Dept. of Mechanical Engineering, NSPU*")
-    st.markdown("[finiteelementsimulationsbytgn.blogspot.com](https://finiteelementsimulationsbytgn.blogspot.com)")
-    
 
+st.sidebar.markdown("""
+### **About the Developer**
+**Dr. Theingi Nwe** Associate Professor  
+Dept. of Mechanical Engineering, NSPU  
+[TgN Virtual Lab](https://finiteelementsimulationsbytgn.blogspot.com)
+""")
+        
 # ─────────────────────────────────────────
 # MAIN TABS
 # ─────────────────────────────────────────
@@ -664,8 +666,7 @@ with tab_theory:
     st.latex(r"\sigma(x) = \frac{M(x)}{W} \quad \text{where} \quad W = \frac{I}{y_{max}}")
     st.caption("Maximum stress at extreme fibres y = ±h/2. In Euler-Bernoulli theory shear stress is neglected → von Mises = |σ_bending|")
 
-    st.markdown("---")
-    st.info("📖 **Reference:** Victor Lüddemann — *FEM Meets Python: Building a 1D Beam Simulator You Can Play With* (LinkedIn, Jan 2026). [Try the original Streamlit app](https://fembeam1d-vlueddemann.streamlit.app/)")
+
 
 # ─────────────────────────────────────────────────────
 # TAB 3: MATRIX
